@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pomodoro/store/pomodoro.store.dart';
 import 'package:provider/provider.dart';
@@ -36,7 +37,7 @@ class EntradaTempo extends StatelessWidget {
             ElevatedButton(
               onPressed: this.dec,
               child: Icon(
-                Icons.arrow_downward,
+                CupertinoIcons.arrow_down,
                 color: Colors.white,
               ),
               style: ElevatedButton.styleFrom(
@@ -46,7 +47,7 @@ class EntradaTempo extends StatelessWidget {
               ),
             ),
             Text(
-              '${this.valor} min',
+              ' ${this.valor} min ',
               style: TextStyle(
                 fontSize: 18,
               ),
@@ -54,7 +55,7 @@ class EntradaTempo extends StatelessWidget {
             ElevatedButton(
               onPressed: this.inc,
               child: Icon(
-                Icons.arrow_upward,
+                CupertinoIcons.arrow_up,
                 color: Colors.white,
               ),
               style: ElevatedButton.styleFrom(

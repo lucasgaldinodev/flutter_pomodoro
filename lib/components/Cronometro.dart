@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:pomodoro/components/CronometroBotao.dart';
@@ -19,9 +20,7 @@ class Cronometro extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                store.estaTrabalhando()
-                    ? 'Hora de Trabalhar'
-                    : 'Hora de Descansar',
+                store.estaTrabalhando() ? 'Time to Work' : 'Time to Rest',
                 style: TextStyle(
                   fontSize: 40,
                   color: Colors.white,
@@ -43,8 +42,8 @@ class Cronometro extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 10),
                       child: CronometroBotao(
-                        texto: 'Iniciar',
-                        icone: Icons.play_arrow,
+                        texto: 'Start',
+                        icone: CupertinoIcons.play_arrow,
                         click: store.iniciar,
                       ),
                     ),
@@ -52,16 +51,16 @@ class Cronometro extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(right: 10),
                       child: CronometroBotao(
-                        texto: 'Parar',
-                        icone: Icons.stop,
+                        texto: 'Stop',
+                        icone: CupertinoIcons.stop,
                         click: store.parar,
                       ),
                     ),
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
                     child: CronometroBotao(
-                      texto: 'Reiniciar',
-                      icone: Icons.refresh,
+                      texto: 'Reset',
+                      icone: CupertinoIcons.refresh,
                       click: store.reiniciar,
                     ),
                   ),
