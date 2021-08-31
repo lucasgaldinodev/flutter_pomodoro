@@ -4,4 +4,4 @@ My vision of the Pomodoro project with MobX in the [Aprenda Flutter & Dart e Con
 
 ## Screenshots
 ![](https://github.com/lucasgaldinomt/flutter-pomodoro/blob/main/screenshots/iOS1.png)
-![](https://github.com/lucasgaldinomt/flutter-pomodoro/blob/master/screenshots/iOS2.png)
+![](https://github.com/lucasgaldinomt/flutter-pomodoro/blob/main/screenshots/iOS2.png)
